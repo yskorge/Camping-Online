@@ -20,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         PlacesReader(this).read()
     }
 
-    // TODO use tent icon
     private val houseIcon: BitmapDescriptor by lazy {
-        val color = ContextCompat.getColor(this, R.color.purple_700)
-        BitmapHelper.vectorToBitmap(this, R.drawable.ic_baseline_house_24, color)
+        BitmapHelper.vectorToBitmap(this, R.drawable.ic_tent_camping_red, null)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
             addMarkers(googleMap)
 
-//            // Ensure all places are visible in the map.
+            // Ensure all places are visible in the map.
             googleMap.setOnMapLoadedCallback {
                 val bounds = LatLngBounds.builder()
                 campingPlaces.forEach { bounds.include(it.latLng) }

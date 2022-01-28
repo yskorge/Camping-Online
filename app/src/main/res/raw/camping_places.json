@@ -1,0 +1,35 @@
+[
+  {
+    "geometry": {
+      "location": {
+        "lat": -34.2201658558882,
+        "lng": 18.469560379454684
+      }
+    },
+    "name": "Miller's point",
+    "rating": 4.2,
+    "address": "1077 Valencia Street, Cape Town"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": -34.00523829607529,
+        "lng": 18.350088301056385
+      }
+    },
+    "name": "Kommitje",
+    "rating": 4.5,
+    "address": "425 Jefferson Street, Cape Town"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": -33.90398207876188,
+        "lng": 18.66140898487668
+      }
+    },
+    "name": "Belville Camping",
+    "rating": 4,
+    "address": "1233 Howard Street, Cape Town"
+  }
+]

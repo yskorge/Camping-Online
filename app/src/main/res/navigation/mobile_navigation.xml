@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mapsFragment_dest">
+
+    <fragment
+        android:id="@+id/mapsFragment_dest"
+        android:name="com.example.android.campingonline.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFragment_to_campingDetailsFragment"
+            app:destination="@id/campingDetailsFragment_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/campingDetailsFragment_dest"
+        android:name="com.example.android.campingonline.CampingDetailsFragment"
+        android:label="fragment_camping_details"
+        tools:layout="@layout/fragment_camping_details" />
+</navigation>

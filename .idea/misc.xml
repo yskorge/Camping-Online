@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
+        <entry key="app/src/main/res/layout/fragment_camping_details.xml" value="0.24739583333333334" />
+        <entry key="app/src/main/res/layout/fragment_camping_spot_details.xml" value="0.221875" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/marker_info_contents.xml" value="0.25052083333333336" />
       </map>
     </option>

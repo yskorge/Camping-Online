@@ -6,7 +6,8 @@ data class CampingPlacesResponse(
     val geometry: Geometry,
     val name: String,
     val address: String,
-    val rating: Float
+    val rating: Float,
+    val id: String
 ) {
 
     data class Geometry(
@@ -23,5 +24,6 @@ fun CampingPlacesResponse.toCampingPlace(): CampingPlace = CampingPlace(
     name = name,
     latLng = LatLng(geometry.location.lat, geometry.location.lng),
     address = address,
-    rating = rating
+    rating = rating,
+    id = id
 )

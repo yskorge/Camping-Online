@@ -10,14 +10,24 @@
         android:name="com.example.android.campingonline.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps">
+
         <action
             android:id="@+id/action_mapsFragment_to_campingDetailsFragment"
-            app:destination="@id/campingDetailsFragment_dest" />
+            app:destination="@id/campingDetailsFragment_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
         android:id="@+id/campingDetailsFragment_dest"
         android:name="com.example.android.campingonline.CampingDetailsFragment"
         android:label="fragment_camping_details"
-        tools:layout="@layout/fragment_camping_details" />
+        tools:layout="@layout/fragment_camping_details">
+        <argument
+            android:name="camping_spot_id"
+            android:defaultValue="1"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -56,8 +56,17 @@ class MapsFragment : Fragment() {
             // Set custom info window adapter
             googleMap.setInfoWindowAdapter(MarkerInfoWindowAdapter(requireContext()))
 
+            // TODO add transition animation && use button in the marker...big job :-(
             googleMap.setOnInfoWindowClickListener {
-                findNavController().navigate(R.id.campingDetailsFragment_dest)
+//                findNavController().navigate(R.id.campingDetailsFragment_dest)
+
+                val campingPlace = it.tag as? CampingPlace
+                val campingSpotId = campingPlace?.id
+
+                if (campingSpotId != null) {
+                    val action = MapsFragmentDirections.actionMapsFragmentToCampingDetailsFragment(campingSpotId)
+                    findNavController().navigate(action)
+                }
             }
         }
 

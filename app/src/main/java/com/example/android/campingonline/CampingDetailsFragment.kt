@@ -5,12 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 
 class CampingDetailsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {}
+
+        val safeArgs: CampingDetailsFragmentArgs by navArgs()
+        val campingSpotId = safeArgs.campingSpotId
     }
 
     override fun onCreateView(

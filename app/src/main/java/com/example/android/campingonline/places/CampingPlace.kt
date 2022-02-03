@@ -6,5 +6,6 @@ data class CampingPlace(
     val name: String,
     val latLng: LatLng,
     val address: String,
-    val rating: Float
+    val rating: Float,
+    val id: String
 )

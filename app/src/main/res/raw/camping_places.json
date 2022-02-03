@@ -6,6 +6,7 @@
         "lng": 18.469560379454684
       }
     },
+    "id": "1",
     "name": "Miller's point",
     "rating": 4.2,
     "address": "1077 Valencia Street, Cape Town"
@@ -17,6 +18,7 @@
         "lng": 18.350088301056385
       }
     },
+    "id": "2",
     "name": "Kommitje",
     "rating": 4.5,
     "address": "425 Jefferson Street, Cape Town"
@@ -28,6 +30,7 @@
         "lng": 18.66140898487668
       }
     },
+    "id": "3",
     "name": "Belville Camping",
     "rating": 4,
     "address": "1233 Howard Street, Cape Town"

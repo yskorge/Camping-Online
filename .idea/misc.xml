@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/compose-model-1644392528952.xml" value="1.0" />
+        <entry key="../../../../layout/compose-model-1644394722943.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/camping-image-1_background.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
         <entry key="app/src/main/res/layout/fragment_camping_details.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_camping_spot_details.xml" value="0.221875" />

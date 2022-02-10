@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.fragment.navArgs
 import com.example.android.campingonline.places.CampingSpotDetails
 import com.example.android.campingonline.ui.theme.BasicsCampingOnlineTheme
+import androidx.navigation.fragment.findNavController
 
 class CampingDetailsFragment : Fragment() {
 
@@ -38,8 +39,10 @@ class CampingDetailsFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                // TODO set our theme for the app
-                CampingDetails(campingSpotId)
+                BasicsCampingOnlineTheme() {
+                    // TODO set our theme for the app
+                    CampingDetails(campingSpotId)
+                }
             }
         }
     }
@@ -142,7 +145,7 @@ class CampingDetailsFragment : Fragment() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Button(
-                onClick = { /*TODO*/ },
+                onClick = { findNavController().navigate(R.id.calendarFragment_dest) },
                 modifier = Modifier
                     .widthIn(containerWidth / 2)
             ) {
@@ -152,6 +155,24 @@ class CampingDetailsFragment : Fragment() {
 
         Spacer(Modifier.height((containerHeight - 320.dp).coerceAtLeast(0.dp)))
     }
+
+    // TODO make the button reusable
+//    @Composable
+//    fun ButtonStandart(containerWidth: Dp, navAction: () -> Unit) {
+//        Column(
+//            modifier = Modifier
+//                .fillMaxWidth(),
+//            horizontalAlignment = Alignment.CenterHorizontally
+//        ) {
+//            Button(
+//                onClick = { navAction() },
+//                modifier = Modifier
+//                    .widthIn(containerWidth / 2)
+//            ) {
+//                Text(text = "Book now")
+//            }
+//        }
+//    }
 
     @Preview(showBackground = true)
     @Composable

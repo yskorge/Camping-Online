@@ -29,5 +29,22 @@
             android:name="camping_spot_id"
             android:defaultValue="1"
             app:argType="string" />
+        <action
+            android:id="@+id/action_campingDetailsFragment_dest_to_calendarFragment"
+            app:destination="@id/calendarFragment_dest" />
     </fragment>
+    <fragment
+        android:id="@+id/calendarFragment_dest"
+        android:name="com.example.android.campingonline.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_dest_to_confirmationFragment"
+            app:destination="@id/confirmationFragment_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment_dest"
+        android:name="com.example.android.campingonline.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" />
 </navigation>

@@ -5,10 +5,16 @@
       <map>
         <entry key="../../../../layout/compose-model-1644392528952.xml" value="1.0" />
         <entry key="../../../../layout/compose-model-1644394722943.xml" value="0.25" />
+        <entry key="../../../../layout/compose-model-1644483445773.xml" value="0.11078595317725752" />
+        <entry key="../../../../layout/compose-model-1644486318704.xml" value="0.4046296296296296" />
+        <entry key="../../../../layout/compose-model-1644487851888.xml" value="1.0" />
+        <entry key="../../../../layout/compose-model-1644488806790.xml" value="0.14482183055756398" />
+        <entry key="../../../../layout/compose-model-1644502508902.xml" value="0.25636751579194195" />
         <entry key="app/src/main/res/drawable/camping-image-1_background.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
         <entry key="app/src/main/res/layout/fragment_camping_details.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/fragment_camping_spot_details.xml" value="0.221875" />
+        <entry key="app/src/main/res/layout/fragment_confirmation.xml" value="0.2598958333333333" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/marker_info_contents.xml" value="0.25052083333333336" />
       </map>

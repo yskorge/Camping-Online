@@ -180,7 +180,7 @@ class CampingDetailsFragment : Fragment() {
         CampingDetails("1")
     }
 
-    // TODO need to be set up with porper app theme
+    // TODO need to be set up with proper app theme
     @Preview(
         showBackground = true,
         uiMode = Configuration.UI_MODE_NIGHT_YES,

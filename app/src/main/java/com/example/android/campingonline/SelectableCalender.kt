@@ -22,11 +22,25 @@ fun SelectableCalendar() {
     Column(
         Modifier.verticalScroll(rememberScrollState())
     ) {
+        // TODO find a way to representate unavailabe dates
         SelectableCalendar(calendarState = calendarState)
 
+        // TODO remove control buttons and only keep SelectionMode.Period selection
         SelectionControls(selectionState = calendarState.selectionState)
     }
 }
+
+//@Composable
+//fun MyDay(dayState: DayState<DynamicSelectionState>) {
+//    if (dayState.date.dayOfMonth == 1) {
+//        Text(
+//            text = dayState.date.dayOfMonth.toString(),
+//            color = Color.Green
+//        )
+//    } else {
+//        DefaultDay(state = dayState)
+//    }
+//}
 
 @Composable
 private fun SelectionControls(

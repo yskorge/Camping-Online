@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment_dest"
-        android:name="com.example.android.campingonline.ConfirmationFragment"
+        android:name="com.example.android.campingonline.ConfirmationDetailsFragment"
         android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation" />
 </navigation>

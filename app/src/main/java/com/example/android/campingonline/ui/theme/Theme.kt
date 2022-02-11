@@ -29,8 +29,6 @@ private val LightColorPalette = lightColors(
     onPrimary = White
 )
 
-// TODO  This is still unused and need to be adjusted according to the theme we want for this app
-// TODO this is just put here are example of how theme can be done in compose
 @Composable
 fun BasicsCampingOnlineTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

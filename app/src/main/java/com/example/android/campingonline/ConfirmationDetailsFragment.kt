@@ -6,10 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Button
-import androidx.compose.material.Divider
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -31,7 +28,6 @@ class ConfirmationDetailsFragment : Fragment() {
         return ComposeView(requireContext()).apply {
             setContent {
                 BasicsCampingOnlineTheme() {
-                    // TODO set our theme for the app
                     ConfirmationDetails()
                 }
             }
@@ -40,22 +36,27 @@ class ConfirmationDetailsFragment : Fragment() {
 
     @Composable
     fun ConfirmationDetails() {
-        Column {
-            Title("Confirmation")
-            BookingProperties(label = "Camping Spot", value = "Miller's Point")
-            BookingProperties(label = "Amount of  Nights", value = "2")
-            BookingProperties(label = "Dates", value = "27th January - 29th January")
-            BookingProperties(label = "Address", value = "1077 Valencia Street, Cape Town")
+        BoxWithConstraints {
+            Surface {
+                Column {
+                    Title("Confirmation")
+                    BookingProperties(label = "Camping Spot", value = "Miller's Point")
+                    BookingProperties(label = "Amount of  Nights", value = "2")
+                    BookingProperties(label = "Dates", value = "27th January - 29th January")
+                    BookingProperties(label = "Address", value = "1077 Valencia Street, Cape Town")
 
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Button(
-                    onClick = { findNavController().navigate(R.id.calendarFragment_dest) },
-                ) {
-                    Text(text = " Make payment now")
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Button(
+                            modifier = Modifier.padding(16.dp),
+                            onClick = { findNavController().navigate(R.id.calendarFragment_dest) },
+                        ) {
+                            Text(text = "Make payment now")
+                        }
+                    }
                 }
             }
         }
@@ -72,7 +73,8 @@ class ConfirmationDetailsFragment : Fragment() {
                     end = 16.dp,
                     bottom = 16.dp,
                     top = 16.dp
-                ).fillMaxWidth(),
+                )
+                .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(

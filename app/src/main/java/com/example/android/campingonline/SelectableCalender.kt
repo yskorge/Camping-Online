@@ -24,8 +24,7 @@ fun SelectableCalendar() {
     ) {
         // TODO find a way to representate unavailabe dates
         SelectableCalendar(calendarState = calendarState)
-
-        // TODO remove control buttons and only keep SelectionMode.Period selection
+        
         SelectionControls(selectionState = calendarState.selectionState)
     }
 }
@@ -46,20 +45,12 @@ fun SelectableCalendar() {
 private fun SelectionControls(
     selectionState: DynamicSelectionState,
 ) {
+    selectionState.selectionMode = SelectionMode.Period
+
     Text(
         text = "Calendar Selection Mode",
         style = MaterialTheme.typography.h5,
     )
-    SelectionMode.values().forEach { selectionMode ->
-        Row(modifier = Modifier.fillMaxWidth()) {
-            RadioButton(
-                selected = selectionState.selectionMode == selectionMode,
-                onClick = { selectionState.selectionMode = selectionMode }
-            )
-            Text(text = selectionMode.name)
-            Spacer(modifier = Modifier.height(4.dp))
-        }
-    }
 
     Text(
         text = "Selection: ${selectionState.selection.joinToString { it.toString() }}",

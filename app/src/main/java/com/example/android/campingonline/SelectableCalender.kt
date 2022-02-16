@@ -33,7 +33,7 @@ fun SelectableCalendar() {
     ) {
         SelectableCalendar(
             calendarState = calendarState,
-            dayContent = { dayState -> MyDay(dayState) }
+            dayContent = { dayState -> Days(dayState) }
         )
 
         SelectionControls(selectionState = calendarState.selectionState)
@@ -42,7 +42,7 @@ fun SelectableCalendar() {
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
-fun MyDay(dayState: DayState<DynamicSelectionState>) {
+fun Days(dayState: DayState<DynamicSelectionState>) {
     // Example of how the unavailable dates can be returned from the server
     val listOfUnavailableDates = listOf("2022-02-20", "2022-02-21", "2022-02-22")
 

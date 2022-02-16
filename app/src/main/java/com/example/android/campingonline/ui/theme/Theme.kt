@@ -9,20 +9,18 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.Black
-import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.graphics.Color.Companion.DarkGray
-import androidx.compose.ui.graphics.Color.Companion.Green
 import androidx.compose.ui.graphics.Color.Companion.White
-import com.example.android.campingonline.R
 
-private val DarkColorPalette = darkColors(
+val DarkColorPalette = darkColors(
     surface = DarkGray,
     onSurface = White,
     primary = Color(0xff1e88e5),
-    onPrimary = Black
+    onPrimary = Black,
+    onBackground = White
 )
 
-private val LightColorPalette = lightColors(
+val LightColorPalette = lightColors(
     surface = White,
     onSurface = Black,
     primary = Color(0xff1e88e5),

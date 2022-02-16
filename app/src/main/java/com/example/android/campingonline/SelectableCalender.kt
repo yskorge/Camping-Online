@@ -74,6 +74,7 @@ fun CustomUnavailableDay(dayState: DayState<DynamicSelectionState>, modifier: Mo
                 text = dayState.date.dayOfMonth.toString(),
                 style = TextStyle(
                     textDecoration = TextDecoration.LineThrough,
+                    // TODO With Elizabeth figure out proper theming colors here
                     color = Color.Red
                 ),
             )

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mapsFragment_dest"
-        android:name="com.example.android.campingonline.MapsFragment"
+        android:name="com.example.android.campingonline.fragments.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps">
 
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/campingDetailsFragment_dest"
-        android:name="com.example.android.campingonline.CampingDetailsFragment"
+        android:name="com.example.android.campingonline.fragments.CampingDetailsFragment"
         android:label="fragment_camping_details"
         tools:layout="@layout/fragment_camping_details">
         <argument
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/calendarFragment_dest"
-        android:name="com.example.android.campingonline.CalendarFragment"
+        android:name="com.example.android.campingonline.fragments.CalendarFragment"
         android:label="fragment_calendar"
         tools:layout="@layout/fragment_calendar" >
         <action
@@ -44,7 +44,25 @@
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment_dest"
-        android:name="com.example.android.campingonline.ConfirmationDetailsFragment"
+        android:name="com.example.android.campingonline.fragments.ConfirmationDetailsFragment"
         android:label="fragment_confirmation"
-        tools:layout="@layout/fragment_confirmation" />
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_confirmationFragment_dest_to_paymentFragment"
+            app:destination="@id/paymentFragment_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment_dest"
+        android:name="com.example.android.campingonline.fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_confirmedFragment"
+            app:destination="@id/confirmedFragment_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmedFragment_dest"
+        android:name="com.example.android.campingonline.fragments.ConfirmedFragment"
+        android:label="fragment_confirmed"
+        tools:layout="@layout/fragment_confirmed" />
 </navigation>

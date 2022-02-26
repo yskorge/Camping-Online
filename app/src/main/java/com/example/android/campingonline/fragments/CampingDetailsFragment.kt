@@ -1,4 +1,4 @@
-package com.example.android.campingonline
+package com.example.android.campingonline.fragments
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -26,6 +26,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.android.campingonline.places.CampingSpotDetails
 import com.example.android.campingonline.ui.theme.BasicsCampingOnlineTheme
 import androidx.navigation.fragment.findNavController
+import com.example.android.campingonline.R
 
 class CampingDetailsFragment : Fragment() {
 

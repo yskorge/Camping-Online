@@ -1,4 +1,4 @@
-package com.example.android.campingonline
+package com.example.android.campingonline.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.android.campingonline.R
 import com.example.android.campingonline.adapters.MarkerInfoWindowAdapter
 import com.example.android.campingonline.places.CampingPlace
 import com.example.android.campingonline.places.PlacesReader

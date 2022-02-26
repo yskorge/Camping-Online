@@ -1,4 +1,4 @@
-package com.example.android.campingonline
+package com.example.android.campingonline.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -16,6 +16,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.fragment.findNavController
+import com.example.android.campingonline.R
 import com.example.android.campingonline.ui.theme.BasicsCampingOnlineTheme
 
 class ConfirmationDetailsFragment : Fragment() {
@@ -52,7 +53,7 @@ class ConfirmationDetailsFragment : Fragment() {
                     ) {
                         Button(
                             modifier = Modifier.padding(16.dp),
-                            onClick = { findNavController().navigate(R.id.calendarFragment_dest) },
+                            onClick = { findNavController().navigate(R.id.paymentFragment_dest) },
                         ) {
                             Text(text = "Make payment now")
                         }

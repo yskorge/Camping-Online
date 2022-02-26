@@ -1,10 +1,12 @@
-package com.example.android.campingonline
+package com.example.android.campingonline.fragments
 
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.Text
@@ -14,6 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.fragment.findNavController
+import com.example.android.campingonline.R
+import com.example.android.campingonline.SelectableCalendar
 import com.example.android.campingonline.ui.theme.BasicsCampingOnlineTheme
 
 class CalendarFragment : Fragment() {
@@ -32,6 +36,7 @@ class CalendarFragment : Fragment() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     @Composable
     fun CalenderScreen() {
         Column {
